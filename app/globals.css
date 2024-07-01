@@ -3,11 +3,12 @@
 @tailwind utilities;
 
 :root {
+  --tw-border-opacity: 1;
   --primary-color: rgb(147 51 234);
   --secondary-color: rgb(26 28 30);
-  --background-color: rgb(18 20 22);
-  --primary-border: rgb(40 41 43);
-  --secondary-border: rgb(55 65 81);
+  --background-color: linear-gradient(130deg, #141618, #1f2123, #282a2c);
+  --primary-border: rgb(40 41 43 / var(--tw-border-opacity));
+  --secondary-border: rgb(71 71 71/var(--tw-border-quality))
   --white-color: white;
 }
 body {
