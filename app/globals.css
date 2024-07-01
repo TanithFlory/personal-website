@@ -8,7 +8,8 @@
   --secondary-color: rgb(26 28 30);
   --background-color: linear-gradient(130deg, #141618, #1f2123, #282a2c);
   --primary-border: rgb(40 41 43 / var(--tw-border-opacity));
-  --secondary-border: rgb(71 71 71/var(--tw-border-quality))
+  --secondary-border: rgb(71 71 71 / var(--tw-border-quality));
+  --bright-border: #374151;
   --white-color: white;
 }
 body {

@@ -20,6 +20,7 @@ const config: Config = {
       primaryBorder: "var(--primary-border)",
       secondaryBorder: "var(--secondary-color)",
       secondary: "var(--secondary-color)",
+      brightBorder: "var(--bright-border)",
     },
   },
   plugins: [],
