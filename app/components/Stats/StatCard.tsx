@@ -3,7 +3,7 @@ import Wrapper from "@/app/utils/Wrapper";
 interface IProps {
   count: string;
   text: string;
-  icon: JSX.Element;
+  icon: JSX.Element | string;
 }
 
 export default function StatCard({ count, text, icon }: IProps) {
