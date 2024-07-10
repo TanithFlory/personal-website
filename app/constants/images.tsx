@@ -1,5 +1,5 @@
 import { FaFlag } from "react-icons/fa";
-import { IoLogoJavascript, IoStar } from "react-icons/io5";
+import { IoStar } from "react-icons/io5";
 import { IoPerson } from "react-icons/io5";
 import { AiFillProject } from "react-icons/ai";
 import { MdCurrencyBitcoin } from "react-icons/md";

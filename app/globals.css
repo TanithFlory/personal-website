@@ -23,3 +23,23 @@ body {
   background-clip: text;
   color: transparent;
 }
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 1; /* Element is visible */
+  }
+  50% {
+    transform: translateY(20px);
+    opacity: 1; /* Element is visible */
+  }
+  51% {
+    transform: translateY(-20px);
+    opacity: 0; /* Element is invisible */
+  }
+}
+
+.downloadAnimation {
+  animation: bounce 1.2s ease-in-out infinite;
+}
