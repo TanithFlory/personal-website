@@ -22,16 +22,18 @@ import Postman from "../../public/postman.svg";
 import Docker from "../../public/docker.svg";
 import Bash from "../../public/bash.svg";
 import Nodejs from "../../public/nodejs.svg";
-import Expressjs from "../../public/express.svg";
 import Nginx from "../../public/nginx.svg";
 import AWS from "../../public/aws.svg";
 import Reactjs from "../../public/react.svg";
 import Angularjs from "../../public/angular.svg";
 import Nextjs from "../../public/next.svg";
+import SCSS from "../../public/sass.svg";
+import Expressjs from "../../public/express.svg";
+import Shopify from "../../public/shopify.svg";
+import Redis from "../../public/redis.svg";
 
 const styles = "fill-primary h-[15px] w-[15px]";
 const cardStyles = "fill-primary h-[22px] w-[22px]";
-const techStackStyles = "h-[35px] w-[35px]";
 const images: Record<string, JSX.Element | string> = {
   Projects: <FaFlag className={styles} />,
   Experience: <IoStar className={styles} />,
@@ -63,6 +65,9 @@ const images: Record<string, JSX.Element | string> = {
   Nextjs,
   Expressjs,
   Nginx,
+  SCSS,
+  Shopify,
+  Redis,
 };
 
 export default images;
