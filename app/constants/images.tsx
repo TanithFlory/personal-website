@@ -31,9 +31,16 @@ import SCSS from "../../public/sass.svg";
 import Expressjs from "../../public/express.svg";
 import Shopify from "../../public/shopify.svg";
 import Redis from "../../public/redis.svg";
+import { CiMicrochip } from "react-icons/ci";
+import { MdDeveloperMode } from "react-icons/md";
+import { IoLanguage } from "react-icons/io5";
+import { IoLocationSharp } from "react-icons/io5";
+import { IoMdTimer } from "react-icons/io";
+import { FaReact } from "react-icons/fa";
 
 const styles = "fill-primary h-[15px] w-[15px]";
 const cardStyles = "fill-primary h-[22px] w-[22px]";
+const tagStyles = "fill-primary h-[12px] w-[12px]";
 const images: Record<string, JSX.Element | string> = {
   Projects: <FaFlag className={styles} />,
   Experience: <IoStar className={styles} />,
@@ -44,6 +51,12 @@ const images: Record<string, JSX.Element | string> = {
   Discord: <FaDiscord className={cardStyles} />,
   Crud: <IoIosCreate className={cardStyles} />,
   SocialApp: <IoShareSocial className={cardStyles} />,
+  MicroController: <CiMicrochip className={tagStyles} />,
+  Language: <IoLanguage className={tagStyles} />,
+  Time: <IoMdTimer className={tagStyles} />,
+  Location: <IoLocationSharp className={tagStyles} />,
+  Developer: <MdDeveloperMode className={tagStyles} />,
+  MERN: <FaReact className={tagStyles} />,
   HTML,
   CSS,
   TailwindCSS,
