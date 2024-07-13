@@ -2,6 +2,7 @@ import PersonalDetails from "./components/PersonalDetails/PersonalDetails";
 import Projects from "./components/Projects/Projects";
 import Stats from "./components/Stats/Stats";
 import TechStack from "./components/TechStack/TechStack";
+import WorkExperience from "./components/WorkExperience/WorkExperience";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Projects />
         <TechStack />
         <PersonalDetails />
+        <WorkExperience />
       </div>
     </main>
   );

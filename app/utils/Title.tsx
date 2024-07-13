@@ -7,7 +7,7 @@ export default function Title({
 }) {
   return (
     <div className="mt-6">
-      <div className="text-md flex items-center gap-2 justify-center">
+      <div className="text-lg flex items-center gap-2 justify-center">
         <div className="">{icon}</div>
         <span className="gradient-text font-bold">{title}</span>
       </div>

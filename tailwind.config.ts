@@ -22,6 +22,7 @@ const config: Config = {
       secondary: "var(--secondary-color)",
       brightBorder: "var(--bright-border)",
       hover: "var(--hover-color)",
+      black: "var(--black-color)",
     },
   },
   plugins: [],

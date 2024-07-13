@@ -38,11 +38,13 @@ import { IoLocationSharp } from "react-icons/io5";
 import { IoMdTimer } from "react-icons/io";
 import { FaReact } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import AetherByte from "../../public/Aetherbyte.jpg";
+import Modo from "../../public/modo.png";
 
 const styles = "fill-primary h-[15px] w-[15px]";
 const cardStyles = "fill-primary h-[22px] w-[22px]";
 const tagStyles = "fill-primary h-[12px] w-[12px]";
-const images: Record<string, JSX.Element | string> = {
+const images: Record<string, any> = {
   Projects: <FaFlag className={styles} />,
   Experience: <IoStar className={styles} />,
   Clients: <IoPerson className={styles} />,
@@ -83,6 +85,8 @@ const images: Record<string, JSX.Element | string> = {
   SCSS,
   Shopify,
   Redis,
+  AetherByte,
+  Modo,
 };
 
 export default images;
