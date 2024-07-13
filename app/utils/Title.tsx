@@ -9,7 +9,7 @@ export default function Title({
     <div className="mt-6">
       <div className="text-md flex items-center gap-2 justify-center">
         <div className="">{icon}</div>
-        <span className="text-xl font-bold">{title}</span>
+        <span className="gradient-text font-bold">{title}</span>
       </div>
     </div>
   );

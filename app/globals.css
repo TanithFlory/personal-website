@@ -11,7 +11,7 @@
   --secondary-border: rgb(71 71 71 / var(--tw-border-quality));
   --bright-border: #374151;
   --white-color: white;
-  --hover-color: #581C87;
+  --hover-color: #581c87;
 }
 body {
   margin: 0;
@@ -43,4 +43,27 @@ body {
 
 .downloadAnimation {
   animation: bounce 1.2s ease-in-out infinite;
+}
+
+.tiltAnimation {
+  animation: tilt-animation 2s ease-in-out infinite;
+}
+
+@keyframes tilt-animation {
+  30% {
+    transform: scale(1.05);
+  }
+  40%,
+  60% {
+    transform: rotate(-20deg) scale(1.05);
+  }
+  50% {
+    transform: rotate(20deg) scale(1.05);
+  }
+  70% {
+    transform: rotate(0deg) scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

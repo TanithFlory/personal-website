@@ -37,6 +37,7 @@ import { IoLanguage } from "react-icons/io5";
 import { IoLocationSharp } from "react-icons/io5";
 import { IoMdTimer } from "react-icons/io";
 import { FaReact } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const styles = "fill-primary h-[15px] w-[15px]";
 const cardStyles = "fill-primary h-[22px] w-[22px]";
@@ -57,6 +58,7 @@ const images: Record<string, JSX.Element | string> = {
   Location: <IoLocationSharp className={tagStyles} />,
   Developer: <MdDeveloperMode className={tagStyles} />,
   MERN: <FaReact className={tagStyles} />,
+  Email: <MdEmail className={cardStyles} />,
   HTML,
   CSS,
   TailwindCSS,
