@@ -5,7 +5,7 @@ interface IProps {
 
 export default function Wrapper({ className, children }: IProps) {
   return (
-    <div className={`${className || ""} border-secondaryBorder border-2 bg-bgGradient rounded-xl`}>
+    <div className={`${className || ""} border-primaryBorder border-2 bg-bgGradient rounded-xl`}>
       {children}
     </div>
   );
