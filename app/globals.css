@@ -11,6 +11,7 @@
   --secondary-border: rgb(71 71 71 / var(--tw-border-quality));
   --bright-border: #374151;
   --white-color: white;
+  --hover-color: #581C87;
 }
 body {
   margin: 0;

@@ -5,10 +5,11 @@ import Title from "@/app/utils/Title";
 import images from "@/app/constants/images";
 import ResumeDownload from "./ResumeDownload";
 import Tags from "./Tags";
+import PrimaryButton from "@/app/utils/PrimaryButton";
 
 export default function PersonalDetails() {
   return (
-    <Wrapper className="col-span-3 h-[346px] row-span-2 px-4 relative">
+    <Wrapper className="col-span-3 h-[380px] row-span-2 px-4 relative">
       <Title title="About me" icon={images.ProjectsDisplay} />
       <div className="flex gap-4 mt-4">
         <div className="">
@@ -43,6 +44,7 @@ export default function PersonalDetails() {
         </div>
       </div>
       <Tags />
+      <PrimaryButton text="Email me" icon={images.Email} maxWidth="320px" />
       <ResumeDownload />
     </Wrapper>
   );

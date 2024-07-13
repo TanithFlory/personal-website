@@ -2,7 +2,7 @@ import images from "@/app/constants/images";
 
 export default function Tags() {
   return (
-    <div className="mt-4 flex flex-wrap items-center justify-left gap-2 bg-bgGradient border-2 border-primaryBorder rounded-md w-full h-42 sm:h-24 p-4">
+    <div className="my-4 flex flex-wrap items-center justify-left gap-2 bg-bgGradient border-2 border-primaryBorder rounded-md w-full h-42 sm:h-24 p-4">
       {tags.map(({ icon, text }, index) => {
         return (
           <div
