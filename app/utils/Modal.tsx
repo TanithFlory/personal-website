@@ -7,7 +7,6 @@ interface IModal {
   title: string;
   children: React.ReactNode;
   closeModalHandler: (e: React.MouseEvent<HTMLDivElement>) => void;
-  largerModal?: boolean | undefined;
   icon: string;
 }
 
@@ -15,7 +14,6 @@ export default function Modal({
   title,
   children,
   closeModalHandler,
-  largerModal,
   icon,
 }: IModal) {
   useEffect(() => {
@@ -38,9 +36,7 @@ export default function Modal({
       onClick={closeModalHandler}
     >
       <motion.div
-        className={`fixed top-[50%] left-[50%] bg-black rounded-md p-6 modal-content w-full slideUpAndFade border-2 border-brightBorder ${
-          largerModal ? "max-w-[50vw]" : "max-w-[550px]"
-        }`}
+        className={`fixed top-[50%] left-[50%] bg-black rounded-md p-6 modal-content w-full slideUpAndFade border-2 border-brightBorder max-w-[750px]`}
         initial={{ transform: "translate(-50%,-50%) scale(0)" }}
         animate={{ transform: "translate(-50%,-50%) scale(1)" }}
         exit={{ scale: 0 }}
@@ -50,7 +46,7 @@ export default function Modal({
           <div>
             <Image src={icon} width={36} height={36} alt={title} />
           </div>
-          <div className="text-sm">{title}</div>
+          <div className="text-md font-bold">{title}</div>
         </div>
         <div className="mt-4">{children}</div>
       </motion.div>
