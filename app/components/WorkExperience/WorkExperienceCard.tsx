@@ -23,14 +23,13 @@ export default function WorkExperienceCard({
         <div>
           <Image src={logo} width={36} height={36} alt={name} />
         </div>
-        <div>{name}</div>
+        <div className="flex items-center gap-2">
+          <div>{name}</div>
+          <div>{images.View}</div>
+        </div>
       </div>
       {modalOpen ? (
-        <Modal
-          title={name}
-          icon={logo}
-          closeModalHandler={closeModal}
-        >
+        <Modal title={name} icon={logo} closeModalHandler={closeModal}>
           {children}
         </Modal>
       ) : null}

@@ -1,4 +1,4 @@
-import { FaFlag } from "react-icons/fa";
+import { FaEye, FaFlag } from "react-icons/fa";
 import { IoStar } from "react-icons/io5";
 import { IoPerson } from "react-icons/io5";
 import { AiFillProject } from "react-icons/ai";
@@ -61,6 +61,7 @@ const images: Record<string, any> = {
   Developer: <MdDeveloperMode className={tagStyles} />,
   MERN: <FaReact className={tagStyles} />,
   Email: <MdEmail className={cardStyles} />,
+  View: <FaEye className={cardStyles} />,
   HTML,
   CSS,
   TailwindCSS,
