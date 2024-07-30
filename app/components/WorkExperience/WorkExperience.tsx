@@ -5,11 +5,11 @@ import Wrapper from "@/app/utils/Wrapper";
 
 export default function WorkExperience() {
   return (
-    <Wrapper className="col-span-2 row-span-1 pb-6 sm:col-span-4 md:col-span-3 px-4">
+    <Wrapper className="bg-[#121416] rounded-xl col-span-2 row-span-2  h-[220px] xl:-mt-[70px] border-2 border-[#28292b] sm:col-span-4 md:col-span-3 px-4">
       <div>
         <Title title="Work Experience" icon={images.WorkExperience} />
       </div>
-      <div className="mt-4 flex items-center gap-4 justify-center">
+      <div className="mt-10 flex items-center gap-4 justify-center">
         {workExperienceData.map((item, index) => {
           return (
             <WorkExperienceCard {...item} key={index}>

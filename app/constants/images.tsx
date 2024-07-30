@@ -1,5 +1,5 @@
-import { FaEye, FaFlag } from "react-icons/fa";
-import { IoStar } from "react-icons/io5";
+import { FaEye, FaFlag, FaGithub, FaLinkedin } from "react-icons/fa";
+import { IoShareSocialSharp, IoStar } from "react-icons/io5";
 import { IoPerson } from "react-icons/io5";
 import { AiFillProject } from "react-icons/ai";
 import { MdCurrencyBitcoin } from "react-icons/md";
@@ -40,6 +40,7 @@ import { FaReact } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import AetherByte from "../../public/Aetherbyte.jpg";
 import Modo from "../../public/modo.png";
+import { GiRainbowStar } from "react-icons/gi";
 
 const styles = "fill-primary h-[15px] w-[15px]";
 const cardStyles = "fill-primary h-[22px] w-[22px]";
@@ -62,6 +63,10 @@ const images: Record<string, any> = {
   MERN: <FaReact className={tagStyles} />,
   Email: <MdEmail className={cardStyles} />,
   View: <FaEye className={cardStyles} />,
+  RainbowStar: <GiRainbowStar className={`${cardStyles} ml-[4px] mt-[4px]`} />,
+  Socials: <IoShareSocialSharp className={cardStyles} />,
+  Github: <FaGithub className={cardStyles} />,
+  LinkedIn: <FaLinkedin className={cardStyles} />,
   HTML,
   CSS,
   TailwindCSS,
