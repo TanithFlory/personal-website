@@ -228,7 +228,7 @@ const projectsData = [
 
 export default function Projects() {
   return (
-    <Wrapper className="flex flex-col items-center justify-start col-span-2 row-span-2 h-[470px]">
+    <Wrapper className="flex flex-col items-center justify-start col-span-2 row-span-2 max-md:col-span-3 h-[470px] px-4">
       <Title title="Projects" icon={images.ProjectsDisplay} />
       <div className="w-full space-y-4 my-6 px-6 ">
         {projectsData.map((item, index) => {

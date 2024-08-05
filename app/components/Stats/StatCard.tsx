@@ -35,7 +35,7 @@ export default function StatCard({ count, text, icon }: IProps) {
   }, [count]);
 
   return (
-    <Wrapper className="h-[200px] w-full flex flex-col items-center justify-center">
+    <Wrapper className="h-[200px] flex flex-col items-center justify-center w-[280px]">
       <div className="gradient-text text-5xl font-bold">{currentCount}+</div>
       <div className="mt-2 flex items-center gap-2  py-1 px-4 border-primaryBorder border-2 rounded-xl">
         <div>{icon}</div>

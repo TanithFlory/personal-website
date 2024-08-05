@@ -14,7 +14,7 @@ export default function ResumeDownload() {
       onMouseEnter={setAnimation}
       onMouseLeave={setAnimation}
     >
-      <div className="text-sm">Resume</div>
+      <div className="text-sm max-sm:hidden">Resume</div>
       <div>
         <Download animate={animate} />
       </div>

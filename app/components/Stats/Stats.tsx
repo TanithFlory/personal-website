@@ -21,7 +21,7 @@ const statsData = [
 
 export default function Stats() {
   return (
-    <div className="flex items-center gap-2 col-span-3">
+    <div className="flex items-center gap-2 col-span-3 max-sm:flex-wrap justify-center">
       {statsData.map((item, index) => (
         <StatCard {...item} key={index} />
       ))}

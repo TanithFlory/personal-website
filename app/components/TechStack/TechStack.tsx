@@ -54,7 +54,7 @@ export default function TechStack() {
     return () => clearInterval(interval);
   }, []);
   return (
-    <Wrapper className="col-span-1 h-[470px] row-span-2 px-4">
+    <Wrapper className="col-span-1 h-[470px] max-sm:col-span-3  max-md:col-span-3 row-span-2 px-4 ">
       <Title title="Tech Stack" icon={images.ProjectsDisplay} />
       <div className="space-y-2 overflow-hidden mt-4" ref={setContainer}>
         {techStackData.map((item, index) => {

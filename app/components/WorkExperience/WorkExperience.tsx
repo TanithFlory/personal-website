@@ -5,11 +5,11 @@ import Wrapper from "@/app/utils/Wrapper";
 
 export default function WorkExperience() {
   return (
-    <Wrapper className="bg-[#121416] rounded-xl col-span-2 row-span-2  h-[220px] xl:-mt-[70px] border-2 border-[#28292b] sm:col-span-4 md:col-span-3 px-4">
-      <div>
-        <Title title="Work Experience" icon={images.WorkExperience} />
+    <Wrapper className="bg-[#121416] rounded-xl col-span-2 max-md:col-span-3 max-sm:col-span-3 row-span-2 h-[220px] xl:-mt-[70px] border-2 border-[#28292b] sm:col-span-4 md:col-span-3 px-4 flex flex-col items-center justify-center gap-4">
+      <div className="mb-2">
+        <Title title="Work Experience" icon={images.WorkExperience} className="!mt-0"/>
       </div>
-      <div className="mt-10 flex items-center gap-4 justify-center">
+      <div className="flex items-center gap-4 justify-center flex-wrap">
         {workExperienceData.map((item, index) => {
           return (
             <WorkExperienceCard {...item} key={index}>
@@ -25,7 +25,7 @@ export default function WorkExperience() {
 const workExperienceData = [
   {
     name: "AetherByte Tech Solutions",
-    logo: images.AetherByte as string,
+    logo: images.AetherByte,
     content: (
       <>
         <div>

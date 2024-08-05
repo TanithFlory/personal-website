@@ -9,7 +9,7 @@ import WorkExperience from "./components/WorkExperience/WorkExperience";
 export default function Home() {
   return (
     <main>
-      <div className="grid grid-cols-2 gap-4 w-full max-w-screen-2xl sm:grid-cols-4 md:grid-cols-3 xl:grid-cols-6 mx-auto py-16">
+      <div className="grid grid-cols-2 gap-4 px-4 w-full max-w-screen-2xl sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 mx-auto py-16">
         <Stats />
         <Projects />
         <TechStack />
