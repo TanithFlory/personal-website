@@ -25,7 +25,7 @@ export default function WorkExperience() {
 const workExperienceData = [
   {
     name: "AetherByte Tech Solutions",
-    logo: images.AetherByte,
+    logo: images.AetherByte as string,
     content: (
       <>
         <div>

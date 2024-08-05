@@ -1,8 +1,9 @@
-"use client"
+"use client";
 import { useEffect } from "react";
 import { createPortal } from "react-dom";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import React from "react";
 interface IModal {
   title: string;
   children: React.ReactNode;
@@ -44,10 +45,10 @@ export default function Modal({
       >
         <div className="flex gap-2 items-center">
           <div>
-            {typeof icon === "string" ? (
-              <Image src={icon} width={36} height={36} alt={title} />
-            ) : (
+            {React.isValidElement(icon) ? (
               icon
+            ) : (
+              <Image src={icon as string} width={36} height={36} alt={title} />
             )}
           </div>
           <div className="text-md font-bold">{title}</div>
