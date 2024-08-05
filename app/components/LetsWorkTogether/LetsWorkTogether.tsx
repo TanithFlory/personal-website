@@ -13,7 +13,7 @@ export default function LetsWorkTogether() {
         <div className="text-xs text-center mb-4">
           Let's transform your ideas into reality for your projects
         </div>
-        <PrimaryButton icon={images.Email} text="Email me" maxWidth="220px" />
+        <PrimaryButton href="mailto:tanithflory6660@gmail.com" icon={images.Email} text="Email me" maxWidth="220px" />
       </div>
     </Wrapper>
   );

@@ -1,13 +1,13 @@
+"use client"
 import { useEffect } from "react";
 import { createPortal } from "react-dom";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import images from "../constants/images";
 interface IModal {
   title: string;
   children: React.ReactNode;
   closeModalHandler: (e: React.MouseEvent<HTMLDivElement>) => void;
-  icon: string;
+  icon: string | JSX.Element;
 }
 
 export default function Modal({
@@ -44,7 +44,11 @@ export default function Modal({
       >
         <div className="flex gap-2 items-center">
           <div>
-            <Image src={icon} width={36} height={36} alt={title} />
+            {typeof icon === "string" ? (
+              <Image src={icon} width={36} height={36} alt={title} />
+            ) : (
+              icon
+            )}
           </div>
           <div className="text-md font-bold">{title}</div>
         </div>

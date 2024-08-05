@@ -44,7 +44,7 @@ export default function PersonalDetails() {
         </div>
       </div>
       <Tags />
-      <PrimaryButton text="Email me" icon={images.Email} maxWidth="320px" />
+      <PrimaryButton href="mailto:tanithflory6660@gmail.com" text="Email me" icon={images.Email} maxWidth="320px" />
       <ResumeDownload />
     </Wrapper>
   );
