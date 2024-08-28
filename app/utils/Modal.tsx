@@ -33,7 +33,7 @@ export default function Modal({
 
   return createPortal(
     <div
-      className="h-screen w-screen bg-[rgba(0,0,0,0.7)] absolute top-0 left-0 z-[999]"
+      className="h-screen w-screen bg-[rgba(0,0,0,0.7)] fixed top-0 left-0 z-[999]"
       onClick={closeModalHandler}
     >
       <motion.div

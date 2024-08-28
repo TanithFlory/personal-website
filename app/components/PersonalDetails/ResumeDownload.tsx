@@ -10,7 +10,7 @@ export default function ResumeDownload() {
   }
   return (
     <div
-      className="absolute right-[16px] top-[16px] h-[42px] bg-[#505152] hover:bg-primary px-4 rounded-md py-2 flex items-center gap-2 cursor-pointer"
+      className="absolute right-[16px] top-[16px] h-[42px] bg-[#505152] hover:bg-primary rounded-md flex items-center justify-center sm:px-4 gap-2 cursor-pointer max-sm:h-[30px] max-sm:w-[30px]"
       onMouseEnter={setAnimation}
       onMouseLeave={setAnimation}
     >

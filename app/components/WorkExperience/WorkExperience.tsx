@@ -7,7 +7,11 @@ export default function WorkExperience() {
   return (
     <Wrapper className="bg-[#121416] rounded-xl col-span-2 max-md:col-span-3 max-sm:col-span-3 row-span-2 h-[220px] xl:-mt-[70px] border-2 border-[#28292b] sm:col-span-4 md:col-span-3 px-4 flex flex-col items-center justify-center gap-4">
       <div className="mb-2">
-        <Title title="Work Experience" icon={images.WorkExperience} className="!mt-0"/>
+        <Title
+          title="Work Experience"
+          icon={images.WorkExperience}
+          className="!mt-0"
+        />
       </div>
       <div className="flex items-center gap-4 justify-center flex-wrap">
         {workExperienceData.map((item, index) => {
@@ -29,9 +33,8 @@ const workExperienceData = [
     content: (
       <>
         <div>
-          <div className="mb-4 font-bold text-sm">
-            September 2022 - September 2023
-          </div>
+          <h3 className="font-bold text-sm">Front-end developer</h3>
+          <div className="mb-4  text-sm">September 2022 - September 2023</div>
           <ul className="list-disc list-inside space-y-3 text-gray-700 text-sm">
             <li>
               Achieved exceptional page insights scores ranging from 98 to 100,
@@ -61,7 +64,8 @@ const workExperienceData = [
     content: (
       <>
         <div>
-          <div className="mb-4 font-bold text-sm">December 2023 - Present</div>
+          <h3 className="font-bold text-sm">Full-stack developer</h3>
+          <div className="mb-4 text-sm">December 2023 - Present</div>
           <ul className="list-disc list-inside space-y-3 text-gray-700 text-sm">
             <li>
               Developed a primary project to build a dashboard for building

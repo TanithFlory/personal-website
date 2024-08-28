@@ -17,14 +17,14 @@ export default function WorkExperienceCard({
   return (
     <>
       <div
-        className="border-brightBorder border-[1px] flex items-center gap-2 h-[50px] cursor-pointer rounded-md p-4 text-sm w-[280px]"
+        className="border-brightBorder border-[1px] flex items-center gap-2 h-[50px] cursor-pointer rounded-md p-4 text-sm w-full max-w-[280px]"
         onClick={openModal}
       >
         <div>
           <Image src={logo} width={36} height={36} alt={name} />
         </div>
-        <div className="flex items-center gap-2">
-          <div>{name}</div>
+        <div className="flex items-center gap-2 justify-between w-full">
+          <div className="text-sm max-sm:text-xs">{name}</div>
           <div>{images.View}</div>
         </div>
       </div>

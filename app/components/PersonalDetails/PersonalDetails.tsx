@@ -11,14 +11,14 @@ export default function PersonalDetails() {
   return (
     <Wrapper className="col-span-3 h-[380px] max-sm:h-[auto] row-span-2 px-4 relative">
       <Title title="About me" icon={images.ProjectsDisplay} />
-      <div className="flex gap-4 mt-4">
+      <div className="flex gap-4 mt-4 flex-wrap">
         <div className="">
           <Image
             src={profilePic}
             width={100}
             height={100}
             alt="ProfilePicture"
-            className="h-[120px] w-[120px] rounded-md"
+            className="h-[120px] w-[120px] rounded-md object-contain"
           />
         </div>
         <div className="text-sm">
