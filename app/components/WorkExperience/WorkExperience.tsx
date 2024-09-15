@@ -13,7 +13,7 @@ export default function WorkExperience() {
           className="!mt-0"
         />
       </div>
-      <div className="flex items-center gap-4 justify-center flex-wrap">
+      <div className="flex items-center gap-4 justify-center max-md:flex-wrap">
         {workExperienceData.map((item, index) => {
           return (
             <WorkExperienceCard {...item} key={index}>

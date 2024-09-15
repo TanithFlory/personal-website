@@ -17,7 +17,7 @@ export default function WorkExperienceCard({
   return (
     <>
       <div
-        className="border-brightBorder border-[1px] flex items-center gap-2 h-[50px] cursor-pointer rounded-md p-4 text-sm w-full max-w-[280px]"
+        className="border-brightBorder border-[1px] flex items-center gap-2 h-[50px] cursor-pointer rounded-md p-4 text-sm w-[280px]"
         onClick={openModal}
       >
         <div>

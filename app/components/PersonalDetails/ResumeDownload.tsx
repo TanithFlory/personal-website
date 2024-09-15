@@ -15,9 +15,9 @@ export default function ResumeDownload() {
       onMouseLeave={setAnimation}
     >
       <div className="text-sm max-sm:hidden">Resume</div>
-      <div>
+      <a href="/Resume.pdf" download={"Tanith Flory - Resume"}>
         <Download animate={animate} />
-      </div>
+      </a>
     </div>
   );
 }
