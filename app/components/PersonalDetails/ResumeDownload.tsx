@@ -9,15 +9,17 @@ export default function ResumeDownload() {
     setAnimate((prev) => !prev);
   }
   return (
-    <div
+    <a
+      href="/Tanith Flory - Resume.pdf"
+      download={"Tanith Flory - Resume"}
       className="absolute right-[16px] top-[16px] h-[42px] bg-[#505152] hover:bg-primary rounded-md flex items-center justify-center sm:px-4 gap-2 cursor-pointer max-sm:h-[30px] max-sm:w-[30px]"
       onMouseEnter={setAnimation}
       onMouseLeave={setAnimation}
     >
       <div className="text-sm max-sm:hidden">Resume</div>
-      <a href="/Resume.pdf" download={"Tanith Flory - Resume"}>
+      <div>
         <Download animate={animate} />
-      </a>
-    </div>
+      </div>
+    </a>
   );
 }
