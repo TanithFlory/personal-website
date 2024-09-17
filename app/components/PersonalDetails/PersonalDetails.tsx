@@ -1,6 +1,4 @@
 import Wrapper from "@/app/utils/Wrapper";
-import Image from "next/image";
-import profilePic from "../../../public/download.png";
 import Title from "@/app/utils/Title";
 import images from "@/app/constants/images";
 import ResumeDownload from "./ResumeDownload";
@@ -12,16 +10,7 @@ export default function PersonalDetails() {
     <Wrapper className="col-span-3 h-[380px] max-sm:h-[auto] row-span-2 px-4 relative">
       <Title title="About me" icon={images.ProjectsDisplay} />
       <div className="flex gap-4 mt-4 flex-wrap">
-        <div className="">
-          <Image
-            src={profilePic}
-            width={100}
-            height={100}
-            alt="ProfilePicture"
-            className="h-[120px] w-[120px] rounded-md object-contain"
-          />
-        </div>
-        <div className="text-sm">
+        <div className="text-sm ml-2">
           <div className="flex items-center gap-2 px-2 py-1 border-primaryBorder border-2 bg-bgGradient rounded-full">
             <div>
               <svg
